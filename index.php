@@ -12,3 +12,12 @@
  *
  * 5. Utilisez le chaînage des méthodes pour mettre à jour le nom et le prix en une seule ligne.
  */
+
+require 'classes/VODService.php';
+
+$VOD = new VODService('Les visiteurs', 12.99);
+var_dump($VOD); ?>
+
+<br> <?php
+$VOD->setName('Harry Potter')->setPrice(15.99);
+var_dump($VOD);
